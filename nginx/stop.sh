@@ -1,3 +1,4 @@
 #! /bin/bash
 
-docker ps -a | grep webproxy | awk '{print $1}' | xargs docker stop
+cid=$(docker ps -a | egrep -e "webproxy" | awk '{print $1}')
+docker stop "${cid}"
