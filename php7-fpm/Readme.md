@@ -1,0 +1,1 @@
+fpm模式，需配合nginx或caddy
